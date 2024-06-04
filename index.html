@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="initial-screen">
+        <h1>Welcome to the Quiz!</h1>
+        <p>Test your knowledge on HTML, CSS, and JavaScript.</p>
+        <button id="start-quiz">Start Quiz</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <div id="question-container">
+            <p id="question-text"></p>
+        </div>
+        <div id="answer-container">
+            <input type="radio" name="answer" id="option1" value="0">
+            <label for="option1" id="label1"></label><br>
+            <input type="radio" name="answer" id="option2" value="1">
+            <label for="option2" id="label2"></label><br>
+            <input type="radio" name="answer" id="option3" value="2">
+            <label for="option3" id="label3"></label><br>
+            <input type="radio" name="answer" id="option4" value="3">
+            <label for="option4" id="label4"></label><br>
+        </div>
+        <button id="submit-answer">Submit</button>
+        <p id="score-display">Score: 0</p>
+        <p id="feedback"></p>
+        <p id="timer">Time left: <span id="time">30</span> seconds</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
